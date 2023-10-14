@@ -4,7 +4,7 @@ from vosk import Model, KaldiRecognizer
 import os
 import pyaudio
 
-model = Model("model")
+model = Model('model')
 rec = KaldiRecognizer(model, 16000)
 
 p = pyaudio.PyAudio()
@@ -18,6 +18,6 @@ while True:
     if rec.AcceptWaveform(data):
         print(rec.Result())
     else:
-        print(rec.partialResult())
+        print(rec.PartialResult())
 
-    print(rec.FinalResult())
+print(rec.FinalResult())
