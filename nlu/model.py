@@ -43,12 +43,16 @@ for i, inp in enumerate(inputs):
 
 labels = set(outputs)
 
+fwrite = open('labels.txt', 'w', encoding="utf-8")
+
 labels2idx = {}
 idx2label = {}
 
 for k, label in enumerate(labels):
     labels2idx[label] = k
     idx2label[k] = label
+    fwrite.write(label + '\n')
+fwrite.close()
 
 output_data = []
 
@@ -68,6 +72,9 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['acc']
 
 model.fit(input_data, output_data, epochs=128)
 
+# Salvar modelo.
+model.save('model.h5')
+
 # Classificar texto em uma entidade.
 def classify(text):
     # Criar um arrey de entrada.
@@ -82,6 +89,6 @@ def classify(text):
     idx = out.argmax()
     print(idx2label[idx])
 
-while True:
+'''while True:
     text = input("Digite algo: ")
-    classify(text)
+    classify(text)'''
