@@ -38,8 +38,4 @@ commands:
 - commmand:
   input: Abrir google
   entity: open
-  action: 
-- commmand:
-  input: Abra youtube
-  entity: open
-  action: 
+  action: google
