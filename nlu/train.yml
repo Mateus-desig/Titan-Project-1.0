@@ -36,6 +36,11 @@ commands:
 
   # Open.
 - commmand:
-  input: Abrir google
+  input: Abrir bloco de notas
   entity: open
-  action: google
+  action: notepad
+
+- commmand:
+  input: Abra o bloco de notas
+  entity: open
+  action: notepad
