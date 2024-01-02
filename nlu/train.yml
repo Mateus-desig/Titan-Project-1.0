@@ -39,8 +39,25 @@ commands:
   input: Abrir bloco de notas
   entity: open
   action: notepad
-
 - commmand:
   input: Abra o bloco de notas
   entity: open
   action: notepad
+
+- commmand:
+  input: Abra o chrome
+  entity: open
+  action: chrome
+- commmand:
+  input: Abrir chrome
+  entity: open
+  action: chrome
+
+- commmand:
+  input: Abra o minecraft
+  entity: open
+  action: minecraft
+- commmand:
+  input: Abrir minecraft
+  entity: open
+  action: minecraft

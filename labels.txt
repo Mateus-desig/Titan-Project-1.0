@@ -1,4 +1,6 @@
-open|notepad
-time|getTime
 weather|getWeather
+open|notepad
+open|minecraft
+time|getTime
 time|getDate
+open|chrome

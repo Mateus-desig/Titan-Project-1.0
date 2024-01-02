@@ -33,6 +33,15 @@ def evaluate(text):
         speak('Abrindo o bloco de notas.')
         os.system('notepad.exe')
 
+    elif entity == 'open|chrome':
+        speak('Abrindo o chrome.')
+        os.system('"C:/Program Files/Google/Chrome/Application/chrome.exe"')
+
+    elif entity == 'open|minecraft':
+        speak('Abrindo o minecraft.')
+        os.system('"C:/Users/utrac/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Overwolf.exe"')
+
+
     print('text: {} Entity: {}'.format(text, entity))
 
 
